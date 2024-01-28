@@ -8,7 +8,7 @@ const app = express()
 
 app.use(express.static("public"))
 
-app.listen(port, () => console.log("https://localhost:3030"))
+app.listen(port, () => console.log("http://localhost:3030/"))
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/home.html"))
