@@ -130,8 +130,6 @@ header ul li a {
 }
 
 .precio {
-    padding-top: 35px;
-    padding-left: 10px;
 }
 
 footer {
@@ -205,14 +203,13 @@ main section article i {
 .home-main h5 {
     color: #666;
     font-weight: 500;
-    padding: 15px 10px;
+    width: 100%;
+    padding-top: 20px;
 }
 
 .home-main section article .descuento {
-    margin-left: 5px;
     color: var(--verde);
     display: inline-flex;
-    padding-left: 6px;
 }
 
 span {
@@ -306,13 +303,13 @@ span {
     .home-main img {}
 
     .home-main article {
-        width: 40%;
         display: flex;
         flex-wrap: wrap;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         border: none;
         background-color: white;
         margin-bottom: 20px;
+        width: 40%;
     }
 
     .home-main section {
@@ -339,14 +336,25 @@ span {
         border: 1px solid #39b54a;
         background-color: #FFF;
         border-radius: 50%;
-        position: relative;
-        top: -15px;
+        position: absolute;
+        top: -24px;
         right: 20px;
     }
 
     .home-main section article div {
-        margin: 15px;
+        margin: 0px 15px 15px;
+        border-top: lightgrey 1px solid;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    .descuento{
+        width: 70%;
+    }
+
+    .precio{width: 30%;}
 
 }
 
