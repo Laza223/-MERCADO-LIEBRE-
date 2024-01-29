@@ -14,18 +14,16 @@
 }
 
 * {
-    font-family: 'roboto';
+    font-family: 'roboto'; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-.home-body {}
-
 img {
     max-width: 100%;
 }
+/*-------------------------------------------------------Header----------------------------------------------------------*/
 
 header {
     background-color: var(--amarillo);
@@ -47,8 +45,6 @@ header {
     height: 80px;
     margin-left: 30px;
 }
-
-.titulo-compras {}
 
 .barraBusqueda {
     background-color: var(--grisClaro);
@@ -94,7 +90,6 @@ header {
 header ul {
     list-style-type: none;
     padding-left: 0;
-    ;
     font-weight: bold;
 }
 
@@ -131,10 +126,8 @@ header ul li a {
     display: none;
 }
 
-.precio {}
 
 footer {
-    font-family: 'roboto';
     text-align: center;
 }
 
@@ -213,7 +206,10 @@ main section article i {
     display: flex;
 }
 
-.div-article {padding: 15px;background-color: white;}
+.div-article {
+    padding: 15px;
+    background-color: white;
+}
 
 .home-header div input #barra-tablet {
     display: none;
@@ -226,16 +222,15 @@ main section article i {
 
 
     .home-header img {
-        width: 30%;
+        width: 20%;
         display: flex;
         flex-wrap: wrap;
+        margin: 10px;
     }
 
     .titulo-compras {
-        display: flex;
-        width: 28%;
-        align-items: center;
-        height: 20px;
+        width: 44%;
+        gap: 0px;
     }
 
 
@@ -251,12 +246,15 @@ main section article i {
     .home-header input {}
 
     .home-header div input {
-        height: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    width: 100%;
     }
 
     .home-header .logo {}
 
-    #lupa {}
+    #lupa {padding: 10px;border: none;border-radius: 0px 5px 5px 0px;color: var(--grisOscuro);padding-right: 20px;}
 
     .home-header div h4 {
         font-size: 12px;
@@ -362,13 +360,11 @@ main section article i {
     .home-header {}
 
     #lupa {
-        margin-left: 4px;
         font-weight: bold;
     }
 
     .home-header div h4 {
-        padding-left: 9vw;
-        margin-top: 10px;
+        padding-left: 4vw;
     }
 
     .home-main section {

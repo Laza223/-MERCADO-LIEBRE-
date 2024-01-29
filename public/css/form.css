@@ -1,0 +1,138 @@
+@import "styles.css";
+
+/*---------------------------------------------------REGISTER----------------------------------------------------*/
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.body-registro {
+    background-color: var(--amarillo);
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.div-registro {
+    margin: 50px auto;
+    background-color: var(--grisClaro);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.div-registro h2 {
+    text-align: center;
+}
+
+.div-registro input {
+    padding: 4px 4px 4px 7px;
+    border: none;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+.div-registro .eleccion-perfil {
+    display: flex;
+    gap: 20px;
+}
+
+.div-registro label {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.div-registro select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.div-registro button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    max-width: 125px;
+}
+
+.div-registro button:hover {
+    background-color: #45a049;
+}
+
+.div-registro .categoria {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.div-registro form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.div-registro .div-foto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-registro .label-subtitulo {
+    padding-top: 30px;
+    padding-left: 0px;
+    width: 100%;
+}
+
+#foto {
+    max-width: 300px;
+}
+
+/*-----------------------------------------------LOGIN------------------------------------------------*/
+
+
+.home-main {
+    background-color: var(--grisClaro);
+}
+
+.home-main .div-login {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-main button {
+    background-color: var(--celeste);
+    color: white;
+    padding: 10px 27.5vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0px 20px;
+}
+
+.div-registro button:hover {
+    background-color: var(--celeste);
+}
+
+.home-main .barra {
+    width: 60%;
+    border: none;
+    margin: 20px 0px 20px;
+    padding: 10px;
+    border-radius: 5px;
+}

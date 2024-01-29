@@ -2,7 +2,7 @@ const express = require("express")
 
 const path = require("path")
 
-const port = 3030 
+const port = 3030
 
 const app = express()
 
@@ -12,4 +12,15 @@ app.listen(port, () => console.log("http://localhost:3030/"))
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/home.html"))
+})
+
+app.get("/home", (req, res) => { res.redirect("/") }
+)
+
+app.get("/registro", (req, res) => {
+    res.sendFile(path.join(__dirname, "/views/register.html"))
+})
+
+app.get("/ingresar", (req, res) => {
+    res.sendFile(path.join(__dirname, "/views/login.html"))
 })
