@@ -103,7 +103,6 @@
 
 /*-----------------------------------------------LOGIN------------------------------------------------*/
 
-
 .home-main {
     background-color: var(--grisClaro);
 }
@@ -118,11 +117,12 @@
 .home-main button {
     background-color: var(--celeste);
     color: white;
-    padding: 10px 27.5vw;
+    padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin: 20px 0px 20px;
+    width: 60%;
 }
 
 .div-registro button:hover {
