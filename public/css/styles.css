@@ -13,8 +13,18 @@
     --descripciones: 16px;
 }
 
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
 * {
-    font-family: 'roboto'; 
+    font-family: 'roboto';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,6 +33,7 @@
 img {
     max-width: 100%;
 }
+
 /*-------------------------------------------------------Header----------------------------------------------------------*/
 
 header {
@@ -180,7 +191,7 @@ main section article i {
     margin: 15px;
 }
 
-.home-main{
+.home-main {
     background-color: var(--grisClaro);
 }
 
@@ -191,14 +202,17 @@ main section article i {
     background-color: var(--grisClaro);
 }
 
-.home-main img {
-}
+.home-main img {}
 
 .home-main h5 {
     color: #666;
     font-weight: 500;
     width: 100%;
     padding-top: 15px;
+}
+
+.home-main .div-article:hover h5{
+    display: block;
 }
 
 .home-main section article .descuento {
@@ -209,6 +223,11 @@ main section article i {
 .div-article {
     padding: 15px;
     background-color: white;
+}
+
+.div-article i:hover{
+    transition: 0.5s;
+    transform: rotate(-90deg);
 }
 
 .home-header div input #barra-tablet {
@@ -229,7 +248,7 @@ main section article i {
     }
 
     .titulo-compras {
-        width: 44%;
+        width: 40%;
         gap: 0px;
     }
 
@@ -246,15 +265,21 @@ main section article i {
     .home-header input {}
 
     .home-header div input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px 0px 0px 5px;
-    width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0px 0px 5px;
+        width: 100%;
     }
 
     .home-header .logo {}
 
-    #lupa {padding: 10px;border: none;border-radius: 0px 5px 5px 0px;color: var(--grisOscuro);padding-right: 20px;}
+    #lupa {
+        padding: 10px;
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        color: var(--grisOscuro);
+        padding-right: 20px;
+    }
 
     .home-header div h4 {
         font-size: 12px;
@@ -294,6 +319,7 @@ main section article i {
 
     .home-main img {
         border-bottom: lightgray 1px solid;
+        max-height: 308.19px;
     }
 
     .home-main article {
@@ -304,6 +330,15 @@ main section article i {
         background-color: white;
         margin-bottom: 20px;
         width: 40%;
+    }
+
+
+    .home-main article h5{
+        display: none;
+    }
+
+    .home-main article:hover h5{
+        display: block;
     }
 
     .home-main section {
@@ -342,6 +377,11 @@ main section article i {
         flex-wrap: wrap;
     }
 
+    .home-main section article div i:hover{
+        transition: 0.5s;
+        transform: rotate(-90deg);;
+    }
+
     .descuento {
         width: 60%;
         margin-left: 25px;
@@ -349,6 +389,10 @@ main section article i {
 
     .precio {
         width: 30%;
+    }
+
+    .home-main h5:hover{
+        display: none;
     }
 
 }
@@ -373,8 +417,13 @@ main section article i {
     }
 
 
-    .home-main section article div {}
+    .home-main section article div {
+    }
 
+    .home-main section article div i:hover{
+        transition: 0.5s;
+        transform: rotate(-90deg); 
+    }
 
     .home-main article {
         width: 20%;
@@ -410,3 +459,6 @@ main section article i {
         display: flex;
         flex-wrap: wrap;
     }
+
+
+}
