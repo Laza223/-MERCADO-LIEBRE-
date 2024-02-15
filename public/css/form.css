@@ -14,7 +14,7 @@
 }
 
 .body-registro {
-    background-color: var(--amarillo);
+    background-color: white;
     margin: 0;
     padding: 0;
     animation: fadeIn 2s ease-in-out;

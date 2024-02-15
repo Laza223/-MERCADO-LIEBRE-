@@ -191,9 +191,6 @@ main section article i {
     background-color: var(--grisClaro);
 }
 
-.home-main img {
-}
-
 .home-main h5 {
     color: #666;
     font-weight: 500;
@@ -217,10 +214,6 @@ main section article i {
 
 @media (min-width: 361px) {
 
-
-    .home-body {}
-
-
     .home-header img {
         width: 20%;
         display: flex;
@@ -233,17 +226,11 @@ main section article i {
         gap: 0px;
     }
 
-
-    .home-header {}
-
-
     .div-header {
         display: flex;
         padding: 15px;
         align-items: center;
     }
-
-    .home-header input {}
 
     .home-header div input {
     padding: 10px;
@@ -251,8 +238,6 @@ main section article i {
     border-radius: 5px 0px 0px 5px;
     width: 100%;
     }
-
-    .home-header .logo {}
 
     #lupa {padding: 10px;border: none;border-radius: 0px 5px 5px 0px;color: var(--grisOscuro);padding-right: 20px;}
 
@@ -355,10 +340,6 @@ main section article i {
 
 @media (min-width: 769px) {
 
-    .home-body {}
-
-    .home-header {}
-
     #lupa {
         font-weight: bold;
     }
@@ -371,10 +352,6 @@ main section article i {
         display: flex;
         justify-content: space-evenly;
     }
-
-
-    .home-main section article div {}
-
 
     .home-main article {
         width: 20%;
@@ -394,8 +371,6 @@ main section article i {
         width: 100%;
     }
 
-    .home-main h3 {}
-
     .precio {
         padding: 0px;
         width: 30%;
@@ -410,3 +385,4 @@ main section article i {
         display: flex;
         flex-wrap: wrap;
     }
+}
