@@ -122,11 +122,15 @@ header ul li a {
 }
 
 
+#img-banner {display: none;}
+
 .home-nav {
     display: none;
 }
 
-.precio {width: 40%;}
+.precio {
+    width: 40%;
+}
 
 footer {
     font-family: 'roboto';
@@ -177,7 +181,7 @@ main section article i {
     color: var(--verde);
 }
 
-.div-article{
+.div-article {
     padding: 10px;
     width: 100%;
 }
@@ -233,6 +237,10 @@ span {
         flex-wrap: wrap;
     }
 
+    #img-banner{
+        display: none;
+    }
+
     .titulo-compras {
         margin-right: auto;
         display: flex;
@@ -251,8 +259,7 @@ span {
         align-items: center;
     }
 
-    .home-header input {
-    }
+    .home-header input {}
 
     .home-header div input {
         height: 100%;
@@ -260,8 +267,7 @@ span {
 
     .home-header .logo {}
 
-    #lupa {
-    }
+    #lupa {}
 
     .home-header div h4 {
         font-size: 12px;
@@ -341,21 +347,22 @@ span {
     }
 
     .home-main section article div {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
     }
 
 }
 
 @media (min-width: 769px) {
 
-    .home-body {}
 
-    .home-header {}
+    #img-banner{
+        display: none;
+    }
 
     #lupa {
-    margin-left: 4px;
+        margin-left: 4px;
     }
 
     .home-header div h4 {
@@ -370,8 +377,8 @@ span {
 
 
     .home-main section article div {
-    position: relative;
-}
+        position: relative;
+    }
 
 
     .home-main article {
